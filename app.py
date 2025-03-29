@@ -2,9 +2,8 @@ import streamlit as st
 import pandas as pd
 from fbprophet import Prophet  # or use Prophet from prophet package if needed
 
-# Import your CryptoCurrencies class from the alphavantage module
-from alphavantage import AlphaVantage as av
-
+# Correct absolute import of the CryptoCurrencies class from alphavantage.py
+from alphavantage import CryptoCurrencies
 
 # Set your title
 st.title("Crypto Monthly Prediction")
@@ -12,7 +11,7 @@ st.title("Crypto Monthly Prediction")
 # Get API key from secrets
 api_key = st.secrets["ALPHA_VANTAGE"]["API_KEY"]
 
-# Instantiate the API wrapper (adjust initialization as needed for your class)
+# Instantiate the API wrapper with your API key
 crypto = CryptoCurrencies(api_key=api_key)
 
 # Select cryptocurrency and market
