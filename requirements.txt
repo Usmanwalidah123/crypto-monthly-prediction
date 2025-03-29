@@ -1,5 +1,5 @@
 streamlit
-fbprophet==0.7.1  # or prophet if using the new version
+fbprophet
 pandas
 requests
-alpha_vantage  # if available, otherwise include your module
+alpha_vantage  
