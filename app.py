@@ -3,7 +3,8 @@ import pandas as pd
 from fbprophet import Prophet  # or use Prophet from prophet package if needed
 
 # Import your CryptoCurrencies class from the alphavantage module
-from alphavantage import CryptoCurrencies
+from alphavantage import AlphaVantage as av
+
 
 # Set your title
 st.title("Crypto Monthly Prediction")
