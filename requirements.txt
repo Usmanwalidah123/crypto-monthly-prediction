@@ -2,4 +2,4 @@ streamlit
 fbprophet==0.7.1  # or prophet if using the new version
 pandas
 requests
-alphavantage-api  # if available, otherwise include your module
+alpha_vantage  # if available, otherwise include your module
